@@ -1,0 +1,95 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+.navbar-con
+{
+     height: 7vh;
+     width: 100vw;
+     background-color: #181818;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#tags
+{  
+   flex: 0.6;
+   color: rgb(255, 255, 255);
+   font-size: 0.8rem;
+   display: flex;
+   font-weight: none;
+   justify-content: space-evenly;
+   font-family:Arial, Helvetica, sans-serif
+}
+#menu, #apple-logo
+{
+    display: none; 
+}
+/* --------------------------------------------------------------------------------------- */
+
+.hero-section
+{
+    background-image: url(hero-image.png);
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+h1
+{   color: white;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+     margin-top: 2rem;}
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.buttons
+{
+    display: flex;
+    gap: 1rem;}
+button
+{   height: 3rem;
+    width: 10rem;
+    background-color: rgb(0, 72, 255);
+    color: white;
+    border-radius: 5rem;
+    border-style: none;
+    transition: all 0.4s ease-in  ;
+    overflow: hidden;
+    transition: scale 400ms;
+} 
+button:hover {
+    background-color: #181818;
+    scale: 90%;}
+/* --------------------------------------------------------------------------------------- */
+            /* MEDIA QUREY FOR RESPONSIVE  */
+
+@media (max-width:600px)
+ {.navbar-con
+{background-color: #181818;
+color: white;}
+#tags
+{ display: none;}
+#menu
+{display: block;}
+#apple-logo
+{display: block;}
+P{
+    font-size: 1.3rem;
+}
+.navbar-con {
+   justify-content: center;
+   gap: 2rem;}
+ }
+
+/* --------------------------------------------------------------------------------------- */
